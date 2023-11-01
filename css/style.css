@@ -42,5 +42,14 @@ body{
 }
 /*Styling for button*/
 .search button{
-    
+    width: 60px;
+    height: 60px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #c5cac9;
+}
+/*Styling for img in search button*/
+.search button img{
+    width: 17px;
 }
