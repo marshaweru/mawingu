@@ -28,3 +28,19 @@ body{
     justify-content: space-between;
 }
 /*Styling for search input box*/
+.search input{
+    background: #c5cac9;
+    padding: 10px 25px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    height: 60px;
+    margin-right: 16px;
+    color: #555;
+}
+/*Styling for button*/
+.search button{
+    
+}
