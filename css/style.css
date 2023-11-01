@@ -59,4 +59,18 @@ body{
     width: 170px;
 }
 /*Decorate h1 title*/
-
+.weather h1{
+    font-weight: 450;
+    font-size: 40px;
+}
+/*Decorate h2 title*/
+.weather h2{
+    font-weight: 450;
+    font-size: 40px;
+    margin-top: -10px;
+}
+/*Decorate class name details*/
+.details{
+    align-items: center;
+    display: flex;
+}
