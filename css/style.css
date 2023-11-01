@@ -60,12 +60,12 @@ body{
 }
 /*Decorate h1 title*/
 .weather h1{
-    font-weight: 500;
-    font-size: 80px;
+    font-weight: 450;
+    font-size: 75px;
 }
 /*Decorate h2 title*/
 .weather h2{
-    font-weight: 400;
+    font-weight: 350;
     font-size: 45px;
     margin-top: -10px;
 }
@@ -78,3 +78,16 @@ body{
     padding: 0 20px;
 }
 /*Update size of icons and their text*/
+.col{
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    margin-top: -5px;
+    font-size: 26px;
+}
