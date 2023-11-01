@@ -55,5 +55,8 @@ body{
 }
 /*Styling for weather icon*/
 .weather-icon{
-    
+    margin-top: 30px;
+    width: 170px;
 }
+/*Decorate h1 title*/
+
