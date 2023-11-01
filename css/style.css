@@ -51,7 +51,7 @@ body{
 }
 /*Styling for img in search button*/
 .search button img{
-    width: 17px;
+    width: 16px;
 }
 /*Styling for weather icon*/
 .weather-icon{
@@ -60,17 +60,21 @@ body{
 }
 /*Decorate h1 title*/
 .weather h1{
-    font-weight: 450;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 80px;
 }
 /*Decorate h2 title*/
 .weather h2{
-    font-weight: 450;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 45px;
     margin-top: -10px;
 }
 /*Decorate class name details*/
 .details{
+    margin-top: 50px;
+    justify-content: space-between;
     align-items: center;
     display: flex;
+    padding: 0 20px;
 }
+/*Update size of icons and their text*/
