@@ -16,7 +16,7 @@ checkWeather();
 //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
 //Select city element. innerHTML updates text written in element
 document.querySelector(".city").innerHTML = data.name;
-document.querySelector(".temp").innerHTML = data.main.temp;
+document.querySelector(".temp").innerHTML = data.main.temp + °C;
 document.querySelector(".humidity").innerHTML = data.main.humidity;
 document.querySelector(".wind").innerHTML = data.wind.speed;
 //Add percentage, degree celcius and kph as above
