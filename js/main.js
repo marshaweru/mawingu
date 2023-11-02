@@ -17,3 +17,4 @@ checkWeather();
 //Select city element. innerHTML updates text written in element
 document.querySelector(".city").innerHTML = data.name;
 document.querySelector(".temp").innerHTML = data.main.temp;
+document.querySelector(".humidity").innerHTML = data.main.humidity;
