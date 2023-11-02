@@ -13,4 +13,5 @@ async function checkWeather(){
 
 checkWeather();
 
-//Update temp, city, humidity and wind information accoirding to data from API. So select these elements and update data
+//Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
+//Select city element
