@@ -17,7 +17,7 @@ async function checkWeather(city){
 }
 
 searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
+    checkWeather(searchBox.value);//SearchBox.value gives city name in input field
 })
 
 //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
