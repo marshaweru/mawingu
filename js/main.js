@@ -15,3 +15,5 @@ checkWeather();
 
 //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
 //Select city element. innerHTML updates text written in element
+document.querySelector(".city").innerHTML = data.name;
+document.querySelector(".temp").innerHTML = data.main.temp;
