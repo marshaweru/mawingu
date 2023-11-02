@@ -1,17 +1,24 @@
 //Variable with const keyword
 
 const apiKey = "a5fc5fcbec9f6f6e86d9ad33f154e227";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=singapore";
+//const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=singapore";
 //We add city by using q = as above
+//To input city name inside input box and city name to be displayed in app remove city name from varible above and use checkweather function below
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
+const searchBox = document.querySelector(".search input");
+//Click on search btn to send city info in checkweather funct above
+const searchBtn = document.querySelector(".search button");
 //Add async function and name the function
-async function checkWeather(){
-    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+async function checkWeather(city){
+    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
     console.log(data);
 }
 
-checkWeather();
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchBox.value);
+})
 
 //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
 //Select city element. innerHTML updates text written in element
