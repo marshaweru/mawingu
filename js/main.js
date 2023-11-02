@@ -18,4 +18,5 @@ checkWeather();
 document.querySelector(".city").innerHTML = data.name;
 document.querySelector(".temp").innerHTML = data.main.temp;
 document.querySelector(".humidity").innerHTML = data.main.humidity;
-document.querySelector(".wind").innerHTML = data.main.humidity
+document.querySelector(".wind").innerHTML = data.wind.speed;
+//Add percentage, degree celcius and kph as above
