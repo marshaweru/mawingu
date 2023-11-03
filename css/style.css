@@ -91,4 +91,7 @@ body{
     margin-top: -5px;
     font-size: 26px;
 }
-/*Hide default weather setting
+/*Hide default weather setting*/
+.weather{
+    display: none;
+}
