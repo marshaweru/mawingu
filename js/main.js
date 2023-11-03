@@ -15,6 +15,7 @@ const weatherIcon = document.querySelector(".weather-icon");//Add dot in class n
 //Add async function and name the function
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    //Check response code
     var data = await response.json();
     //console.log(data);  remove to enable display of results with each new input
 
