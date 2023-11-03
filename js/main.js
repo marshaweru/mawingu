@@ -16,7 +16,7 @@ const weatherIcon = document.querySelector(".weather-icon");//Add dot in class n
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
-    console.log(data);
+    //console.log(data);  remove to enable display of results with each new input
 
     //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
 //Select city element. innerHTML updates text written in element
@@ -61,7 +61,7 @@ else if(data.weather[0].main == "Search"){
     weatherIcon.src = "images\search.png"
 }
 //To display results after typing in city name
-document.querySelector"
+document.querySelector(".weather").style.display = " block"
 }
 
 searchBtn.addEventListener("click", ()=>{
