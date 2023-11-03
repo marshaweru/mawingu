@@ -7,7 +7,7 @@ const apiKey = "a5fc5fcbec9f6f6e86d9ad33f154e227";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
 const searchBox = document.querySelector(".search input");
-//Click on search btn to send city info in checkweather funct above
+//Click on search btn to send city info in checkweather function above
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");//Add dot in class name to update weather icon
 
