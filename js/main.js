@@ -60,6 +60,8 @@ else if(data.weather[0].main == "Play"){
 else if(data.weather[0].main == "Search"){
     weatherIcon.src = "images\search.png"
 }
+//To display results after typing in city name
+document.querySelector"
 }
 
 searchBtn.addEventListener("click", ()=>{
