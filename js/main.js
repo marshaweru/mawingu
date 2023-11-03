@@ -14,16 +14,20 @@ async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
     console.log(data);
-}
 
-searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);//SearchBox.value gives city name in input field
-})
-
-//Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
+    //Update temp, city, humidity and wind information accoirding to data from API. So select these elements from HTML and update data
 //Select city element. innerHTML updates text written in element
 document.querySelector(".city").innerHTML = data.name;
 document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";//Round off figure to nearest 1 by adding Math.round(data.main.temp)
 document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
 document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 //Add percentage, degree celcius and kph as above
+
+//Update weather image according to weather condition
+
+}
+
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchBox.value);//SearchBox.value gives city name in input field
+})
+
