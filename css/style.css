@@ -97,5 +97,9 @@ body{
 }
 /*CSS for error message*/
 .error{
-    
+    display: none; /*hide until needed*/
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
 }
