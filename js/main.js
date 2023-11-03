@@ -9,6 +9,9 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=
 const searchBox = document.querySelector(".search input");
 //Click on search btn to send city info in checkweather funct above
 const searchBtn = document.querySelector(".search button");
+const weatherIcon = document.querySelector("weather-icon");
+
+
 //Add async function and name the function
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -24,6 +27,9 @@ document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 //Add percentage, degree celcius and kph as above
 
 //Update weather image according to weather condition
+if(data.weather[0].main == "Clouds"){
+    weatherIcon.src = "images\clouds.png";//Update source file
+}
 
 }
 
