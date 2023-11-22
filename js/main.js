@@ -16,6 +16,12 @@ const weatherIcon = document.querySelector(".weather-icon");//Add dot in class n
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     //Check response code
+    if(response.status == 404){
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+    }else{
+        
+    }
     var data = await response.json();
     //console.log(data);  remove to enable display of results with each new input
 
@@ -63,6 +69,7 @@ else if(data.weather[0].main == "Search"){
 }
 //To display results after typing in city name
 document.querySelector(".weather").style.display = "block";
+ document.querySelector(".error").style.display = "none";
 }
 
 searchBtn.addEventListener("click", ()=>{
